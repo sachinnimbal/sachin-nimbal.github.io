@@ -107,17 +107,13 @@ html {
   transition: all 0.3s ease;
   color: var(--white);
 }
-.button:focus,
-.button:hover,
-.button.active {
+.button:hover {
   color: transparent;
   box-shadow: rgba(150, 150, 193, 0.25) 0px 30px 60px -12px inset,
     rgba(255, 255, 255, 0.1) 0px 18px 36px -18px inset;
   border-color: var(--color-main);
 }
-.button:focus::after,
-.button:hover::after,
-.button.active::after {
+.button:hover::after{
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }

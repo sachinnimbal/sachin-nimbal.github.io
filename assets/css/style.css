@@ -669,7 +669,9 @@ footer {
   color: white;
   text-decoration: none;
 }
-
+.social-media{
+  width: 100%;
+}
 .social-media a {
   margin: 0 10px;
   color: white;

@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const typedElement = document.querySelector(".typed");
   if (typedElement) {
     let typedStrings = typedElement.getAttribute("data-typed-items");
@@ -39,6 +43,28 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".footer-nav a").forEach(function (anchor) {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const href = this.getAttribute("href");
+      
+      const targetSection = document.querySelector(href);
+      if (targetSection) {
+        if ("scrollBehavior" in document.documentElement.style) {
+          window.scroll({
+            top: targetSection.offsetTop,
+            behavior: "smooth"
+          });
+        } else {
+          location.href = href; 
+        }
+      }
+    });
+  });
+});
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const skillsSection = document.querySelector("#skills");

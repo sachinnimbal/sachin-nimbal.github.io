@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const skillsSection = document.querySelector("#skills");
   const circles = document.querySelectorAll(".progress-ring__circle");
-  const skills = [65, 90, 80, 55, 80, 85, 85, 60];
+  const skills = [65, 90, 80, 55, 80, 85, 85, 60, 40];
 
   circles.forEach((circle, index) => {
     const radius = circle.r.baseVal.value;

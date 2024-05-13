@@ -380,6 +380,14 @@ button {
   width: max-content;
   cursor: var(--pointer);
 }
+.education{
+  overflow-y: auto;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-height: auto;
+  max-width: 100%;
+}
 .skill-section,
 .portfolio-section,
 .education-section,

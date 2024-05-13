@@ -37,7 +37,7 @@
   --button-text: #e9e9e9;
   --disabled: #525252;
   --white: #ffffff;
-  --pointer: url(images/pointer-24.png), auto;
+  --pointer: url(../images/pointer-24.png), auto;
 }
 a {
   text-decoration: none;
@@ -49,7 +49,7 @@ body {
   overflow-x: hidden;
 }
 html {
-  cursor: url(images/cursor.png), auto;
+  cursor: url(../images/cursor.png), auto;
 }
 #hero {
   color: var(--white);

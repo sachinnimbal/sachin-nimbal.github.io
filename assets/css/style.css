@@ -766,3 +766,24 @@ footer {
     box-shadow: 0 0 0 6px rgba(255, 255, 255, 0); 
   }
 }
+
+#backToTopBtn {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #470e47;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#backToTopBtn:hover {
+    background-color: #5a1e5a;
+}
+

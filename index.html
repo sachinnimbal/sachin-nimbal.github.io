@@ -417,6 +417,26 @@
             </button>
         </footer>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-slide-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.title, .skill-section, .bio-section, .portfolio-section, .education-section, .contact-section').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
